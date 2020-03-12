@@ -89,9 +89,6 @@ g_rfp_config                                     ,           SYMBOL ,      PUBLI
 dynamic_memory_AllocatePermanent                 ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 gpio_slimboot_reinforce_all_outputpin_value      ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 lm_GetPowerRegValue                              ,           SYMBOL ,      PUBLIC,      0,                      ,              1
-memcmp                                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
-memcpy                                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
-memset                                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 mpaf_memcpy                                      ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 mpaf_memset                                      ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 micro_bcsIsNormalModeTransition                  ,           SYMBOL ,      PUBLIC,      0,                      ,              1
@@ -100,7 +97,6 @@ osapi_activateTimer                              ,           SYMBOL ,      PUBLI
 osapi_createTimer                                ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 osapi_deactivateTimer                            ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 rmulp_constInfo                                  ,           SYMBOL ,      PUBLIC,      0,                      ,              0
-strlen                                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 wdog_generate_hw_reset                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 #
 wiced_*                                          ,           SYMBOL ,      PUBLIC,      0,                      ,              1
@@ -112,7 +108,6 @@ crc32_Update                                     ,           SYMBOL ,      PUBLI
 curve_p256                                       ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 ECC_Double                                       ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 ECC_PM_B_NAF                                     ,           SYMBOL ,      PUBLIC,      0,                      ,              1
-g_config_Info                                    ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 g_nvram_intf                                     ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 MP_Add                                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 MP_CMP                                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
@@ -137,7 +132,6 @@ DEFAULT_SUPERVISION_TIMEOUT                      ,           SYMBOL ,      PUBLI
 g_foundation_config_PMUflags                     ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 g_foundation_config_sleepModeParam               ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 gatt_find_tcb_by_addr                            ,           SYMBOL ,      PUBLIC,      0,                      ,              1
-gpio_registerForInterrupt                        ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 hciulp_leCsFeatureSet                            ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 mia_isResetReasonPor                             ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 mpaf_pmu_changeLPOSourceSelection                ,           SYMBOL ,      PUBLIC,      0,                      ,              1
@@ -166,7 +160,6 @@ uECC_shared_secret                               ,           SYMBOL ,      PUBLI
 hw_sha2_engine                                   ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 aes_ecb_128_decrypt                              ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 aes_ecb_128_encrypt                              ,           SYMBOL ,      PUBLIC,      0,                      ,              0
-strncpy                                          ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 GKI_freebuf                                      ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 GKI_getpoolbuf                                   ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 GKI_get_pool_bufsize                             ,           SYMBOL ,      PUBLIC,      0,                      ,              0
@@ -207,3 +200,29 @@ smp_aes_encrypt                                   , SYMBOL, PUBLIC, 0, , 1
 smp_aes_set_key                                   , SYMBOL, PUBLIC, 0, , 1
 rtc_setRTCTime                                    , SYMBOL, PUBLIC, 0, , 1
 rtc_getRTCTime                                    , SYMBOL, PUBLIC, 0, , 1
+#
+# general
+__2sprintf                                        , SYMBOL, PUBLIC, 0, , 1
+__2snprintf                                       , SYMBOL, PUBLIC, 0, , 1
+rtc_init                                          , SYMBOL, PUBLIC, 0, , 1
+strncpy                                           , SYMBOL, PUBLIC, 0, , 1
+strlen                                            , SYMBOL, PUBLIC, 0, , 1
+strcmp                                            , SYMBOL, PUBLIC, 0, , 1
+strchr                                            , SYMBOL, PUBLIC, 0, , 1
+strstr                                            , SYMBOL, PUBLIC, 0, , 1
+g_aon_flags                                       , SYMBOL, PUBLIC, 0, , 1
+gpio_getPortOutput                                , SYMBOL, PUBLIC, 0, , 1
+gpio_setPortOutput                                , SYMBOL, PUBLIC, 0, , 1
+gpio_getPortInput                                 , SYMBOL, PUBLIC, 0, , 1
+gpio_getPortInterruptStatus                       , SYMBOL, PUBLIC, 0, , 1
+gpio_clearPortInterruptStatus                     , SYMBOL, PUBLIC, 0, , 1
+gpio_configurePortPins                            , SYMBOL, PUBLIC, 0, , 1
+gpio_registerForInterrupt                         , SYMBOL, PUBLIC, 0, , 1
+BTM_SetDeviceClass                                , SYMBOL, PUBLIC, 0, , 1
+BTM_ReadDeviceClass                               , SYMBOL, PUBLIC, 0, , 1
+BTM_SetLocalDeviceName                            , SYMBOL, PUBLIC, 0, , 1
+BTM_ReadLocalDeviceName                           , SYMBOL, PUBLIC, 0, , 1
+memmove                                           , SYMBOL, PUBLIC, 0, , 1
+memcmp                                            , SYMBOL, PUBLIC, 0, , 1
+memcpy                                            , SYMBOL, PUBLIC, 0, , 1
+memset                                            , SYMBOL, PUBLIC, 0, , 1
