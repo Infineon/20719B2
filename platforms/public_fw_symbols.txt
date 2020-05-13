@@ -153,6 +153,7 @@ adc_advanced_audio_handler_enable                ,           SYMBOL ,      PUBLI
 #
 # audio
 patch_autoInstall                                ,           SYMBOL ,      PUBLIC,      0,                      ,              0
+PORT_Purge                                       ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 PORT_Read                                        ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 PORT_Write                                       ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 sco_aud_init                                     ,           SYMBOL ,      PUBLIC,      0,                      ,              0
