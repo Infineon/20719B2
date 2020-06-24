@@ -1,5 +1,5 @@
 /*
- * Copyright 2020, Cypress Semiconductor Corporation or a subsidiary of
+ * Copyright 2016-2020, Cypress Semiconductor Corporation or a subsidiary of
  * Cypress Semiconductor Corporation. All Rights Reserved.
  *
  * This software, including source code, documentation and related
@@ -200,7 +200,7 @@ typedef enum
 /// \return none
 ///////////////////////////////////////////////////////////////////////////////
 void wiced_hal_pspi_init(spi_interface_t           spi,
-                                   UINT32          clkSpeed,
+                                   uint32_t        clkSpeed,
                                    SPI_ENDIAN      endian,
                                    SPI_SS_POLARITY polarity,
                                    SPI_MODE        mode);
