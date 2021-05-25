@@ -99,6 +99,7 @@ osapi_deactivateTimer                            ,           SYMBOL ,      PUBLI
 rmulp_constInfo                                  ,           SYMBOL ,      PUBLIC,      0,                      ,              0
 wdog_generate_hw_reset                           ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 rtcConfig                                        ,           SYMBOL ,      PUBLIC,      0,                      ,              1
+slist_get                                        ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 #
 wiced_*                                          ,           SYMBOL ,      PUBLIC,      0,                      ,              1
 #
@@ -218,6 +219,7 @@ BTM_ReadDeviceClass                               , SYMBOL, PUBLIC, 0, , 1
 BTM_SetLocalDeviceName                            , SYMBOL, PUBLIC, 0, , 1
 BTM_ReadLocalDeviceName                           , SYMBOL, PUBLIC, 0, , 1
 BTM_SetLinkSuperTout                              , SYMBOL, PUBLIC, 0, , 1
+BTM_BleSetStaticRandomAddr                        , SYMBOL, PUBLIC, 0, , 1
 memmove                                           , SYMBOL, PUBLIC, 0, , 1
 memcmp                                            , SYMBOL, PUBLIC, 0, , 1
 memcpy                                            , SYMBOL, PUBLIC, 0, , 1
@@ -229,3 +231,10 @@ adc_pdm_pinconfig                                 , SYMBOL, PUBLIC, 0, , 1
 adc_startAudio                                    , SYMBOL, PUBLIC, 0, , 1
 adc_stopAudio                                     , SYMBOL, PUBLIC, 0, , 1
 adc_config                                        , SYMBOL, PUBLIC, 0, , 1
+#
+# aes
+aes_setkey_enc                                    , SYMBOL, PUBLIC, 0, , 1
+aes_setkey_dec                                    , SYMBOL, PUBLIC, 0, , 1
+aes_crypt_ecb                                     , SYMBOL, PUBLIC, 0, , 1
+aes_crypt_cbc                                     , SYMBOL, PUBLIC, 0, , 1
+aes_crypt_cfb128                                  , SYMBOL, PUBLIC, 0, , 1
