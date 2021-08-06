@@ -134,11 +134,11 @@ void SPAR_CRT_SETUP(void)
     // Install included libraries and patches if any
     install_libs();
 
+    wiced_pre_init();
     // Setup the application start function.
     wiced_bt_app_pre_init = application_start_internal;
 
     // Call Application pre-initialization function (either the weak or the real (lib) one)
-    wiced_pre_init();
 
 #ifdef TARGET_HAS_NO_32K_CLOCK
     wiced_platform_default_lpo_init();

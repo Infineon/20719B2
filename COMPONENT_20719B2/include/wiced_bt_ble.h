@@ -1018,6 +1018,46 @@ wiced_bool_t wiced_bt_notify_multi_advertisement_packet_transmissions( uint8_t a
 *
 *******************************************************************************/
 wiced_bt_dev_status_t wiced_bt_ble_set_privacy_mode(wiced_bt_device_address_t remote_bda, wiced_bt_ble_privacy_mode_t privacy_mode);
+
+/**
+ * Function         wiced_bt_dev_add_device_to_address_resolution_db
+ *
+ *                  add link key information to internal address resolution db
+ *
+ * @param[in]      p_link_keys    : link keys information stored in application side
+ *
+ * @return          wiced_result_t
+ *
+ */
+wiced_result_t wiced_bt_dev_add_device_to_address_resolution_db(wiced_bt_device_link_keys_t *p_link_keys);
+
+
+/**
+ * Function         wiced_bt_dev_remove_device_from_address_resolution_db
+ *
+ *                  remove link key information from internal address resolution db
+ *
+ * @param[in]      p_link_keys    : link keys information stored in application side
+ *
+ * @return          wiced_result_t
+ *
+ */
+wiced_result_t wiced_bt_dev_remove_device_from_address_resolution_db(wiced_bt_device_link_keys_t *p_link_keys);
+
+
+/**
+ * Function         wiced_bt_dev_get_ble_keys
+ *
+ *                  get le key mask from stored key information of nv ram
+ *
+ * @param[in]      bd_addr    : remote bd address
+ * @param[out]      p_key_mask    : ble key mask stored
+ *
+ * @return          wiced_result_t
+ *
+ */
+wiced_result_t wiced_bt_dev_get_ble_keys(wiced_bt_device_address_t bd_addr, wiced_bt_dev_le_key_type_t *p_key_mask);
+
 /**@} btm_ble_api_functions */
 
 #ifdef __cplusplus
