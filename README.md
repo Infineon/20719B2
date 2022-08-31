@@ -1,5 +1,4 @@
-------------------------------------------------------------------------------------
-# BTSDK - CYW20719
+# AIROC&#8482; BTSDK - CYW20719
 
 ## Overview
 
@@ -44,5 +43,3 @@ The Infineon CYW20719 is an ultra-low-power dual-mode Bluetooth&#174; 5.1 wirele
   kit or can be combined with Arduino compatible shields, user switches and LEDs, and a USB connector
   for power, programming, and USB-UART bridge.<br>
   Max UART baud rate is 1M. Use baud rate of 115200 for Client Control.
-
-------------------------------------------------------------------------------------
